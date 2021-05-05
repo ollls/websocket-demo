@@ -1,0 +1,11 @@
+/target
+/project
+/examples/start/target
+/examples/start/project
+/logs
+/.bloop
+/.metals
+/lib_managed
+.log
+.db
+*.json

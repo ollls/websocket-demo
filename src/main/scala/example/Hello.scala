@@ -178,7 +178,7 @@ object ServerExample extends zio.App {
 
       case GET -> "term" /: file =>
         for {
-          path <- FileUtils.serverFilePath_(file, "test")
+          path <- FileUtils.serverFilePath_(file, "web")
         } yield (Response
           .Ok()
           .asStream(ZStream.fromFile(path).mapChunks(Chunk.single(_))))
